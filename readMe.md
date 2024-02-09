@@ -1,13 +1,13 @@
 # Welcome to our Group5 Web App project
 
-Let us slightly introduce project and files workflow...
+Let us slightly introduce project and files workflow... :blush:
 
-## Files system structure:
+## :o: Files system structure:
 
-### Main directory
+### :floppy_disk: Main directory
 
-### CSS directory
+### :tada: CSS directory
 
-### JS directory
+### :wrench: JS directory
 
-### Documentation
+### :mag_right: Documentation
