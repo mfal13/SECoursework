@@ -6,8 +6,8 @@ Let us slightly introduce project and files workflow... :blush:
 
 ### :floppy_disk: Main directory
 
--   html starting point files
--   future package.json files
+-   Html starting point files
+-   Future package.json files
 
 ### :tada: CSS directory
 
@@ -15,10 +15,14 @@ Let us slightly introduce project and files workflow... :blush:
 
 ### :wrench: JS directory
 
--   app diving js files
+-   App driving js files
 
 ### :mag_right: Documentation
 
--   all about the project
--   specification
--   code of conduct
+-   All about the project
+-   Specification
+-   Code of Conduct
+
+### :camera: Assets
+
+-   All the images and media files
