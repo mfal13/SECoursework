@@ -25,3 +25,8 @@ Instances of unacceptable behavior may be reported by contacting the project tea
 
 ## Attribution
 This code of conduct is adapted from the Mozilla Firefox Community Participation Guidelines, available at [mozilla.org](https://www.mozilla.org/en-US/about/governance/policies/participation/).
+
+
+
+## Signed by:
+Matthew, Andrea, Joseph
