@@ -4,7 +4,7 @@
 We, the members of Group 5, pledge to create and maintain an environment where everyone can participate, collaborate, and contribute effectively, regardless of age, disability, ethnicity, gender identity and expression, level of experience, nationality, personal appearance, race, religion, or sexual identity and orientation.
 
 ## Our Standards
-To foster a positive and inclusive environment, we adhere to the following standards of behavior:
+To create a positive and inclusive environment, we adhere to the following standards of behavior:
 
 - **Respect**: Treat everyone with respect and dignity, valuing their contributions and perspectives.
 - **Openness**: Welcome and support individuals from all backgrounds and identities, creating an inclusive environment where everyone feels empowered to participate.
@@ -20,7 +20,7 @@ To foster a positive and inclusive environment, we adhere to the following stand
 ## Our Responsibilities
 As project members, we are responsible for upholding these standards of behavior and fostering a positive and inclusive environment. Project maintainers are entrusted with enforcing these standards fairly and consistently.
 
-## Enforcement
+## Enforcement / Punishment
 Instances of unacceptable behavior may be reported by contacting the project teacher at [lisa.haskel@roehampton.ac.uk]. All complaints will be reviewed and investigated promptly and fairly. Project members/teacher have the discretion to take appropriate action in response to violations of this code of conduct, including warning, temporary or permanent bans, or other measures deemed necessary.
 
 ## Attribution
