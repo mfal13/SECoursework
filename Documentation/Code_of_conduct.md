@@ -1,7 +1,7 @@
 # Code of Conduct
 
 ## Our Pledge
-We, the members of Group 5, pledge to create and maintain an environment where everyone can participate, collaborate, and contribute effectively, regardless of age, disability, ethnicity, gender identity and expression, level of experience, nationality, personal appearance, race, religion, or sexual identity and orientation.
+Group 5 pledge to create and maintain an environment where everyone can participate, collaborate, and contribute effectively, regardless of age, disability, ethnicity, gender identity and expression, level of experience, nationality, personal appearance, race, religion, or sexual identity and orientation.
 
 ## Our Standards
 To create a positive and inclusive environment, we adhere to the following standards of behavior:
