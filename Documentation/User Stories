@@ -1,0 +1,5 @@
+##As a data analyst, I want to be able to generate a report showing the top 10 most populated cities in a specific continent so that I can compare urbanization levels across regions.
+#Acceptance Criteria:
+The system should allow selecting a continent from a dropdown menu.
+The system should allow specifying the number of cities to be displayed (e.g., top 10).
+The report should display the city name, country, and population for each selected city.
