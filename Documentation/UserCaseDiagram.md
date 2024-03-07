@@ -1,11 +1,33 @@
-graph TD;
-    User[User] -->|Request Reports| SystemController[Population System]
-    User -->|Add New Dataset| SystemController
-    User -->|Apply Security| SystemController
-    User -->|Additional Functionality| SystemController
+```mermaid
+classDiagram
+    class PopulationSystem {
+        + GenerateReports()
+    }
 
-    classDef system fill:#f9f,stroke:#333,stroke-width:2px;
-    class SystemController system;
+    class AddNewDataset {
+        - AddNewInformationToTheDatabase()
+    }
 
-    classDef user fill:#fff,stroke:#333,stroke-width:2px;
-    class User user;
+    class GenerateReport {
+        - GenerateCountryPopulationReport()
+        - GenerateCityPopulationReport()
+        - GenerateCapitalCityReport()
+    }
+
+    class ApplySecurity {
+        - AuthenticateUser()
+        - SetUserPermissions()
+        - ManageUserRoles()
+        - SecureAccess()
+        - UserLogin()
+    }
+
+    class AdditionalFunctionality {
+        - ImplementExtraYetRelevantFunctionalitiesInTheSystem()
+    }
+
+    PopulationSystem -- AddNewDataset
+    PopulationSystem -- GenerateReport
+    PopulationSystem -- ApplySecurity
+    PopulationSystem -- AdditionalFunctionality
+```
