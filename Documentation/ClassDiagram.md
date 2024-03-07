@@ -1,3 +1,4 @@
+<!--```mermaid
 classDiagram
     class SystemController {
       - generateWorld()
@@ -44,3 +45,5 @@ classDiagram
     DataFiltering -- UserInterface
     SecurityController -- UserInterface
     Visualization -- ReportGenerator
+```-->
+
