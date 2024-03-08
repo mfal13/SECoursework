@@ -9,7 +9,7 @@ Data Analyst (Primary User)
 The Data Analyst has access to the Population Information System website.
 ## Flow of Events🔁:
 
-1. he Data Analyst opens the Population Information System website.
+1. The Data Analyst opens the Population Information System website.
 1. The Data Analyst navigates to the "Explore Data" page.
 1. The Data Analyst selects a specific continent from the available filter options.
 1. The system automatically updates the data table to display all countries within the chosen continent.
