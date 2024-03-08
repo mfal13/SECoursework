@@ -29,4 +29,4 @@ This code of conduct is adapted from the Mozilla Firefox Community Participation
 
 
 ## Signed by:
-Matthew, Andrea, Joseph
+Matthew, Andrea, Joseph, Haris
