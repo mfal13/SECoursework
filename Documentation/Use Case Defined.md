@@ -1,7 +1,7 @@
 # 💡Use Cases for Population Information System
 ## Use Case 1: Data Analyst - Explore Population Data by Country
 
-## 🎭Actors:
+## 🎭Actor:
 
 Data Analyst (Primary User)
 ## Precondition:
@@ -27,7 +27,7 @@ The Data Analyst has successfully explored population data for a specific countr
 
 ## Use Case 2: Researcher - Generate Report on Population Distribution
 
-## 🎭Actors:
+## 🎭Actor:
 
 Researcher (Secondary User)
 ## Precondition:
@@ -50,7 +50,7 @@ The Researcher has successfully generated a report on population distribution wi
 
 ## Use Case 3: Policymaker - Access Key Population Statistics
 
-## 🎭Actors:
+## 🎭Actor:
 
 Policymaker (Indirect User)
 ## Precondition:
