@@ -1,49 +1,66 @@
 ```mermaid
 classDiagram
-    class SystemController {
-      - generateWorld()
-      - generateContinent()
-      - generateRegion()
-      - generateCountry()
-      - generateCity()
-      - generateDistrict()
-      - generateCapital()
-      - generateLanguage()
+    class Population {
+        - totalPopulation: int
+        + getTotalPopulation: int
+        + setTotalPopulation(population: int)
     }
-    class DataFiltering {
-      - selectGeographic()
-      - combineFilters()
-      - applyFilters()
+    class Continent {
+        - name: string
+        - countries: list<Country>
+        + getName(): string
+        + setName(name: string): void
+        + getCountries(): list<Country>
+        + addCountry(country: Country): void
+        + removeCountry(country: Country): void
     }
-    class UserInterface {
-      - selectGeographic()
-      - combineFilters()
-      - applyFilters()
-      - updateDisplay()
+    class Region {
+        - name: string
+        - countries: list<Country>
+        + getName(): string
+        + setName(name: string): void
+        + getCountries(): list<Country>
+        + addCountry(country: Country): void
+        + removeCountry(country: Country): void
     }
-    class ReportGenerator {
-      - generateWorldPop()
-      - generateContinentPop()
-      - generateRegionPop()
-      - generateCountryPop()
-      - generateCityPop()
-      - generateDistrictPop()
-      - generateCapitalPop()
-      - generateLanguagePop()
+    class Country {
+        - name: string
+        - population: int
+        - districts: list<District>
+        - cities: list<City>
+        + getName(): string
+        + setName(name: string): void
+        + getPopulation(): int
+        + setPopulation(population: int): void
+        + getDistricts(): list<District>
+        + addDistrict(district: District): void
+        + removeDistrict(district: District): void
+        + getCities(): list<City>
+        + addCity(city: City): void
+        + removeCity(city: City): void
     }
-    class SecurityController {
-      - authenticateUser()
-      - setUserPermissions()
-      - manageUserRoles()
+    class District {
+        - name: string
+        - population: int
+        + getName(): string
+        + setName(name: string): void
+        + getPopulation(): int
+        + setPopulation(population: int): void
     }
-    class Visualization {
-      - generateChart()
-      - customizeChart()
+    class City {
+        - name: string
+        - population: int
+        + getName(): string
+        + setName(name: string): void
+        + getPopulation(): int
+        + setPopulation(population: int): void
     }
-    
-    SystemController -- ReportGenerator
-    DataFiltering -- UserInterface
-    SecurityController -- UserInterface
-    Visualization -- ReportGenerator
+
+    Population -- Continent : has
+    Population -- Region : has
+    Region -- Country : has
+    Country -- District : has
+    Country -- City : has
+
 ```
 
