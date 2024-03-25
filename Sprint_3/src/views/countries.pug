@@ -1,0 +1,20 @@
+extends layout.pug
+
+block head
+  link(rel="stylesheet", href="/countries.css")  
+  
+block content
+  h2 Countries
+  table
+    thead
+      th ID
+      th.text-center Country
+      th Population
+    tbody
+      each country, i in countries  tr
+          td.fit
+            a(href=`/country/${country.CountryCode}`) #{i + 1}  
+            td.fit.text-center #{country.Name}
+          td.fit.number
+            - const population = new Intl.NumberFormat().format(country.Population);
+            = population
