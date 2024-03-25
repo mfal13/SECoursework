@@ -42,6 +42,14 @@ app.get("/cities", (req, res) => {
     });
 });
 
+// Returns an array countries from the database
+app.get("/country", (req, res) => {
+    db.execute("SELECT * FROM `country`", (err, rows, fields) => {
+        console.log(`/country: ${rows.length} rows`);
+        return res.send(rows);
+    });
+});
+
 //Dinamic route example
 app.get("/city/:id", function (req, res) {
     //req.params contains any parametres in the request

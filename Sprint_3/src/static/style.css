@@ -1,5 +1,14 @@
 html,
 body {
+  background-image: url('c:\Users\Owner\OneDrive - University of Roehampton\Desktop\Software Engineering\Population logo.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+}
+
+body {
   font-size: 14px;
   font-family: "Segoe UI", sans-serif;
   background-color: #eeeeee;
