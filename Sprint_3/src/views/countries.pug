@@ -11,10 +11,11 @@ block content
       th.text-center Country
       th Population
     tbody
-      each country, i in countries  tr
+      each country, i in countries
+        tr
           td.fit
             a(href=`/country/${country.CountryCode}`) #{i + 1}  
-            td.fit.text-center #{country.Name}
+          td.fit.text-center #{country.Name}
           td.fit.number
             - const population = new Intl.NumberFormat().format(country.Population);
             = population

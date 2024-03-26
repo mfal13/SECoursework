@@ -28,7 +28,7 @@ var db = mysql.createConnection({
 app.get("/", function (req, res) {
   res.render("index", {
     'title': 'My index page',
-    'heading': 'My heading'
+    'heading': 'POPULATION INFORMATION SYSTEM'
   });
 }); // Sample API route
 
@@ -48,12 +48,12 @@ app.get("/country", function (req, res) {
     console.log("/country: ".concat(rows.length, " rows"));
     return res.send(rows);
   });
-}); //Dinamic route example
+}); //Dynamic route example
 
 app.get("/city/:id", function (req, res) {
-  //req.params contains any parametres in the request
-  //We can examinit in the console for debugging purpose
-  console.log(req, res); //Retrive the name paramentre and use it in a dinamic generated 
+  //req.params contains any parameters in the request
+  //We can examine it in the console for debugging purpose
+  console.log(req, res); //Retrieve the name parameter and use it in a dynamic generated 
 
   res.send("Id is " + req.params.id);
 }); // Run server!

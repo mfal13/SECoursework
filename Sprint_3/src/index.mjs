@@ -37,7 +37,7 @@ app.get("/gallery", (req, res) => {
 
 // About route
 app.get("/about", (req, res) => {
-    res.render("about", { title: "Boring about page" });
+    res.render("about", { title: "This website will display the population of each country and city in the world" });
 });
 
 app.get("/cities", async (req, res) => {

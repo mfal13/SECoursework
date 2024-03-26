@@ -2,7 +2,7 @@ extends layout
 
 block content 
     h2 #{country.name}
-    p #{country.region}, #{country.subregion}
+    p #{country.region}
     form(action=`/countries/${country.id}`, method="POST")
         input(type="text", name="name", placeholder="Type updated name here")
         input(type="submit")
