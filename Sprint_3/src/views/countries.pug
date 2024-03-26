@@ -1,4 +1,4 @@
-extends layout.pug
+extends layout
 
 block head
   link(rel="stylesheet", href="/countries.css")  
@@ -8,14 +8,20 @@ block content
   table
     thead
       th ID
-      th.text-center Country
-      th Population
+      th.text-center Country Code
+      th.text-center Name
+      th.text-center Continent
+      th.text-center Region
+      th.text-center Population
     tbody
       each country, i in countries
         tr
           td.fit
-            a(href=`/country/${country.CountryCode}`) #{i + 1}  
-          td.fit.text-center #{country.Name}
+            a(href=`/country/${country.code}`) #{i + 1}  
+          td.fit.text-center #{country.code}
+          td.fit.text-center #{country.name}
+          td.fit.text-center #{country.continent}
+          td.fit.text-center #{country.region}
           td.fit.number
-            - const population = new Intl.NumberFormat().format(country.Population);
+            - const population = new Intl.NumberFormat().format(country.population);
             = population
