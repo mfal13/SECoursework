@@ -72,11 +72,46 @@ export default class DatabaseService {
         return res;
     }
 
-    /* Get a list of countries */
+    /* Get a particular country by its ID */
+    async getCountry(countryId) {
+        try {
+            // Fetch the country from the database
+            const sql = `SELECT * FROM \`country\` WHERE \`Code\` = '${countryId}'`;
+            const [rows, fields] = await this.conn.execute(sql);
+            
+            // Check if the country exists
+            if (rows.length === 0) {
+                return null; // Country not found
+            }
+
+            // Extract data for the country
+            const data = rows[0];
+            const country = new Country(
+                data.Code,
+                data.Name,
+                data.Continent,
+                data.Region,
+                data.Population
+            );
+
+            return country;
+        } catch (err) {
+            // Handle error...
+            console.error(err);
+            return null;
+        }
+    }
+    
+   /* Get a list of countries */
     async getCountries() {
-        const sql = `SELECT * FROM country`;
-        const [rows, fields] = await this.conn.execute(sql);
-        const countries = rows.map(c => new Country(c.Code, c.Name, c.Continent, c.Region, c.Population));
-        return countries;
+        try {
+            // Fetch countries from the database
+            const data = await this.conn.execute("SELECT * FROM `country`");
+            return data;
+        } catch (err) {
+            // Handle error...
+            console.error(err);
+            return undefined;
+        }
     }
 }

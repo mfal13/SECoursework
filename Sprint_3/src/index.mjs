@@ -71,9 +71,35 @@ app.get("/api/cities", async (req, res) => {
     return res.send(rows);
 });
 
+app.get("/countries", async (req, res) => {
+    const countries = await db.getCountries();
+    /* Render countries.pug with data passed as plain object */
+    return res.render("countries", { countries });
+});
+
+app.get("/countries/:id", async (req, res) => {
+    const countryId = req.params.id;
+    const country = await db.getCountry(countryId);
+    return res.render("country", { country });
+});
+
+/* Update a country by ID */
+app.post("/countries/:id", async (req, res) => {
+    const countryId = req.params.id;
+    const { name } = req.body;
+    const sql = `
+    UPDATE country
+    SET Name = '${name}'
+    WHERE ID = '${countryId}';
+  `;
+    await conn.execute(sql);
+    return res.redirect(`/countries/${countryId}`);
+});
+
+// Returns JSON array of countries
 app.get("/api/countries", async (req, res) => {
     const countries = await db.getCountries();
-    res.send(countries);
+    return res.send(countries);
 });
 
 /* Authentication */

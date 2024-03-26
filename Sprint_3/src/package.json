@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node index.mjs",
     "dev": "nodemon -e js,css --exec node index.mjs",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "author": "",
   "license": "ISC",
@@ -19,6 +19,8 @@
     "script-runner": "^0.1.8"
   },
   "devDependencies": {
-    "nodemon": "^3.1.0"
+    "nodemon": "^3.1.0",
+    "jest": "^27.5.1"
   }
 }
+
