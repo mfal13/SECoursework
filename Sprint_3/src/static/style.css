@@ -66,3 +66,19 @@ nav a:hover {
 .layout-content {
   padding-top: 1.5rem;
 }
+.about-container {
+  background-image: url('https://studyfinds.org/wp-content/uploads/2023/03/World-population-surrounding-the-Earth-scaled.jpeg');
+  background-size: cover; /* Cover the entire container */
+  background-position: center center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent the background image from repeating */
+  color: white; /* Set text color for better visibility */
+  padding: 50px;
+  height: 100vh; /* Set the height of the container to fill the viewport height */
+  display: flex; /* Use flexbox to center content vertically */
+  justify-content: flex-start; /* Align content to the top left */
+  align-items: flex-start; /* Align content to the top left */
+}
+
+.about-content {
+  font-weight: bold; /* Make text bold */
+}
