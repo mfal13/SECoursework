@@ -9,7 +9,7 @@ WORKDIR /app
 COPY . .
 
 # Install dependencies (inside the container)
-RUN npm install -g supervisor && npm install
+RUN npm install 
 
 # Expose server port
 EXPOSE 3000
