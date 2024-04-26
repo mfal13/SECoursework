@@ -1,5 +1,5 @@
 :root {
-    --clr-table: rgba(0, 0, 0, 0.75);
+    --clr-table: rgba(8, 181, 255, 0.75);
 }
 
 table {
@@ -12,6 +12,7 @@ table {
 th,
 td {
     border-bottom: 1px solid var(--clr-table);
+    border-color: aquamarine;
     padding: 0.5rem;
     text-align: left;
 }
