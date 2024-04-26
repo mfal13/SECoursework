@@ -82,3 +82,22 @@ nav a:hover {
 .about-content {
   font-weight: bold; 
 }
+
+.index-container {
+  background-image: url('https://images.pexels.com/photos/6281880/pexels-photo-6281880.jpeg?auto=compress&cs=tinysrgb&w=600');
+  background-size: cover; 
+  background-position: center center; 
+  background-repeat: no-repeat; 
+  color: white; 
+  padding: 50px;
+  height: 100vh; 
+  display: flex; 
+  justify-content: flex-start; 
+  align-items: flex-start; 
+}
+
+.index-content{
+  font-weight: bold;
+  font-family: sans-serif;
+  
+}
