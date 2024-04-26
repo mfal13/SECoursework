@@ -11,19 +11,18 @@ table {
 th,
 td {
     border-bottom: 1px solid var(--clr-table);
-    padding: 0.25rem 1rem;
+    padding: 0.5rem;
     text-align: left;
-    color: rgba(0, 0, 0, 0.85);
 }
 
 thead {
     background-color: var(--clr-table);
+    color: whitesmoke;
 }
 
-thead th {
-    color: whitesmoke;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+th {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
 }
 
 .fit {
