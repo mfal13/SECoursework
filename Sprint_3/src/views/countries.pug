@@ -13,15 +13,16 @@ block content
       th.text-center Continent
       th.text-center Region
       th.text-center Population
+      th.text-center LifeExpectancy
+      
     tbody
       each country, i in countries
         tr
           td.fit
-            a(href=`/country/${country.code}`) #{i + 1}  
-          td.fit.text-center #{country.code}
-          td.fit.text-center #{country.name}
-          td.fit.text-center #{country.continent}
-          td.fit.text-center #{country.region}
-          td.fit.number
-            - const population = new Intl.NumberFormat().format(country.population);
-            = population
+            a(href=`/country/${country.Code}`) #{i + 1}  
+          td.fit.text-center #{country.Code}
+          td.fit.text-center #{country.Name}
+          td.fit.text-center #{country.Continent}
+          td.fit.text-center #{country.Region}
+          td.fit.text-center #{country.Population}
+          td.fit.text-center #{country.LifeExpectancy}

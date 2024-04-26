@@ -106,8 +106,8 @@ export default class DatabaseService {
     async getCountries() {
         try {
             // Fetch countries from the database
-            const data = await this.conn.execute("SELECT * FROM `country`");
-            return data;
+            const [rows, data] = await this.conn.execute("SELECT * FROM `country`");
+            return rows;
         } catch (err) {
             // Handle error...
             console.error(err);
