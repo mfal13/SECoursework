@@ -4,6 +4,7 @@
 
 table {
     border: 1px solid var(--clr-table);
+    border-color: aquamarine;
     border-collapse: collapse;
     width: 100%;
 }
